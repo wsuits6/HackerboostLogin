@@ -3,35 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hackerboost Login</title>
-    <link rel="stylesheet" href="./assets/styles/style.css">
+    <title>TheCubeFactory</title>
 </head>
-
 <body>
-    <div class="form-wrap">
-    <h1 class="title">Let’s Create the Future</h1>
-    <p class="subtitle">Build, secure, and scale with Hackerboost</p>
+    <!--MAIN WRAPPER-->
+    <div class="main-wrapper">
+        <!-- LEFT SIDE-->
+        <div class="left-side">
+            <div class="form-container">
+                <form action="#">
+                    <!---EMAIL-->
+                    <label for="Email">Email:</label>
+                    <input type="email" name="email" id="email">
+                    <br>
 
-    <form>
-        <label>Name</label>
-        <input type="text" placeholder="The real one">
+                    <!---Password-->
+                    <label for="password">Password: </label>
+                    <input type="password" name="password" id="password">
+                    <br>
 
-        <label>Email</label>
-        <input type="email" placeholder="Valid work email">
+                    <!---Secodary option comtianer wrapper -->
+                    <div class="secondary-option ">
+                        <!---Check Box-->
+                        <input type="checkbox" name="checkbox" id="checkbox" >
+                        <p>Remember for 30 days</p>
+                        
+                        <!---Forget password-->
+                        <a href="#">Forget Pasword</a>
+                    </div>
 
-        <label>Password</label>
-        <input type="password" placeholder="Hide your password">
+                    <div class="signin-container">
+                        <button>
+                            Sign in
+                        </button>
+                    </div>
 
-        <label>Confirm Password</label>
-        <input type="password" placeholder="Just confirm it">
+                    <!---
+                    =============
+                    OAITH contianer
+                    ==============
+                    -->
+                    <div class="oauth-container">
 
-        <label>Username</label>
-        <input type="text" placeholder="Create an awesome handle">
+                        <!----google image container-->
+                        <img src="" alt="Google logo">
+                        <a href=""> Sign in with google</a>
+                    </div>
 
-        <button>Create Account</button>
-    </form>
-</div>
+                    <!----Dont ahav an account option-->
+                    <div class="login-opt-container">
+                        <p> Dont Have an Account </p>
 
+                        <a href="#">Sign in</a>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
 </body>
 </html>
-
