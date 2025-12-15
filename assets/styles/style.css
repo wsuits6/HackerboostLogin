@@ -134,9 +134,13 @@ body {
     margin-bottom: 20px;
 }
 
+
+/*Lable styling*/
 .input-group label {
     font-size: 14px;
-    margin-bottom: 6px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    margin-top: 10px;
 }
 
 .input-group input {
@@ -162,23 +166,25 @@ body {
 }
 
 .secondary-option a {
-    text-decoration: none;
-    color: #6b4eff;
+    text-decoration: underline;
+    color: #5F449C;
+    font-weight: bold;
 }
 
 .signin-container button {
     width: 100%;
     padding: 12px;
-    background: #6b4eff;
+    background: #61459E;
     color: #ffffff;
     border: none;
     border-radius: 6px;
     font-size: 15px;
     cursor: pointer;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
-
+/*OAUTH CONTAINER*/
 .oauth-container {
     display: flex;
     align-items: center;
@@ -190,22 +196,25 @@ body {
     margin-bottom: 24px;
 }
 
+/*Google image styling*/
 .oauth-container img {
     height: 18px;
 }
 
+/*OAUTH link styling*/
 .oauth-container a {
     text-decoration: none;
     font-size: 14px;
     color: #000;
 }
 
-
+/*Login Option styling*/
 .login-opt-container {
     text-align: center;
     font-size: 14px;
 }
 
+/*login  link styling*/
 .login-opt-container a {
     color: #6b4eff;
     text-decoration: none;
@@ -214,7 +223,7 @@ body {
 
 
 
-
+/*Right side styles */
 .right-side {
     flex: 1;
     background: #b49be8;
@@ -222,7 +231,7 @@ body {
     align-items: center;
     justify-content: center;
 }
-
+/*style alter*/
 .illustration-container img {
     max-width: 80%;
     height: auto;
