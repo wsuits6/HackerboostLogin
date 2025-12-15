@@ -244,3 +244,11 @@ body {
     max-width: 80%;
     height: auto;
 }
+
+
+
+.woman{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
