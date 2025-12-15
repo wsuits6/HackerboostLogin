@@ -5,35 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TheCubeFactory</title>
 </head>
+
 <body>
+
     <!--MAIN WRAPPER-->
     <div class="main-wrapper">
+
         <!-- LEFT SIDE-->
         <div class="left-side">
+
+            <!-- BRAND / LOGO -->
+            <div class="brand-container">
+                <img src="" alt="TheCubeFactory logo">
+            </div>
+
+            <!-- FORM CONTAINER -->
             <div class="form-container">
-                <form action="#">
+
+                <!-- FORM HEADER -->
+                <div class="form-header">
+                    <h1>Welcome back</h1>
+                    <p>Please enter your details</p>
+                </div>
+
+                <form action="#" method="post">
+
                     <!---EMAIL-->
-                    <label for="Email">Email:</label>
-                    <input type="email" name="email" id="email">
-                    <br>
-
-                    <!---Password-->
-                    <label for="password">Password: </label>
-                    <input type="password" name="password" id="password">
-                    <br>
-
-                    <!---Secodary option comtianer wrapper -->
-                    <div class="secondary-option ">
-                        <!---Check Box-->
-                        <input type="checkbox" name="checkbox" id="checkbox" >
-                        <p>Remember for 30 days</p>
-                        
-                        <!---Forget password-->
-                        <a href="#">Forget Pasword</a>
+                    <div class="input-group">
+                        <label for="email">Email address</label>
+                        <input type="email" name="email" id="email" required>
                     </div>
 
+                    <!---Password-->
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+
+                    <!---Secodary option comtianer wrapper -->
+                    <div class="secondary-option">
+
+                        <!---Check Box-->
+                        <div class="remember-container">
+                            <input type="checkbox" name="checkbox" id="checkbox">
+                            <label for="checkbox">Remember for 30 days</label>
+                        </div>
+
+                        <!---Forget password-->
+                        <a href="#">Forgot password</a>
+                    </div>
+
+                    <!-- SIGN IN BUTTON -->
                     <div class="signin-container">
-                        <button>
+                        <button type="submit">
                             Sign in
                         </button>
                     </div>
@@ -47,19 +71,31 @@
 
                         <!----google image container-->
                         <img src="" alt="Google logo">
-                        <a href=""> Sign in with google</a>
+                        <a href="#">Sign in with Google</a>
                     </div>
 
                     <!----Dont ahav an account option-->
                     <div class="login-opt-container">
-                        <p> Dont Have an Account </p>
-
-                        <a href="#">Sign in</a>
+                        <p>Don't have an account?</p>
+                        <a href="#">Sign up</a>
                     </div>
+
                 </form>
 
             </div>
         </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="right-side">
+
+            <!-- ILLUSTRATION CONTAINER -->
+            <div class="illustration-container">
+                <img src="" alt="Login illustration">
+            </div>
+
+        </div>
+
     </div>
+
 </body>
 </html>
