@@ -239,16 +239,40 @@ body {
     background-color: #b49be8; 
 }
 
-/*style alter*/
-.illustration-container img {
-    max-width: 80%;
-    height: auto;
-}
-
-
+/*Woman styling */
 
 .woman{
     display: flex;
     justify-content: center;
     align-items: center;
+    position:relative ;
 }
+
+/*Computer screen*/
+.computer{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background-color: #000;
+    width: 400px;
+    height: 300px;
+    transform: translateX(-50%) skew(-10deg);
+    left: 20px;
+    top: 29px;
+    border-radius: 20px;
+    border-bottom: 10px #D9CDFE solid;
+    border-right: 10px  #D9CDFE solid;
+}
+
+/*Body styling*/
+/* .body {
+    width: 200px;
+    height: 200px;
+    background: #5E4697;
+    z-index: 2;
+} */
+
+
+
+
