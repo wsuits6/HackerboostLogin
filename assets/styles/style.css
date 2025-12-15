@@ -65,6 +65,24 @@ body {
     height: 30px;
     position: relative;
 }
+/*Qube boxes */
+.qubes1{
+    background:#5F449C;
+    width:12px;
+    height: 12px;
+    position: absolute;
+}
+
+/*Secodn Psydoe Qube*/
+.qubes1::before {
+    background:#5F449C;
+    content:  "";
+    position: absolute;
+    width:12px;
+    height: 12px;
+    top: 16px;
+}
+
 
 
 .form-container {
