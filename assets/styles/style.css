@@ -13,12 +13,14 @@ CSS styling of cube factory
     box-sizing: border-box;
 }
 
+/*Man Body styling*/
 body {
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
 }
 
 
+/* Mian Wrapper styling*/
 .main-wrapper {
     display: flex;
     height: 100vh;
@@ -26,6 +28,7 @@ body {
 }
 
 
+/*Left side*/
 .left-side {
     flex: 1;
     background: #ffffff;
@@ -35,13 +38,32 @@ body {
     padding: 60px;
 }
 
-
+/*Main brnad contianer*/
 .brand-container {
-    margin-bottom: 40px;
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: row;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.brand-container p{
+    font-size: larger;
+    margin: 5px;
 }
 
-.brand-container img {
+
+/*deep part fo Qubes Brnad name*/
+.deep {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*Qubes logo styling*/
+.brand-container .Qubes-contianer  {
     height: 32px;
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    position: relative;
 }
 
 
