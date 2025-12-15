@@ -1,120 +1,161 @@
-/* Reset */
-*{
+/*
+===========================
+CSS styling of cube factory 
+==============================
+*/
+
+
+
+/*Global resets*/
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-:root{
-    --primary: #3b5cff;
-    --secondary: #0f172a;
-    --muted: #64748b;
-    --bg: #f8fafc;
-    --glass: rgba(255,255,255,0.75);
-}
-
-body{
-    width: 100vw;
+body {
+    font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
-    background: linear-gradient(135deg, #eef2ff, #f8fafc);
 }
 
-/* Layout */
-.container{
+
+.main-wrapper {
     display: flex;
+    height: 100vh;
     width: 100%;
-    height: 100%;
 }
 
-/* Left Side */
-.left-side{
-    width: 55%;
+
+.left-side {
+    flex: 1;
+    background: #ffffff;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    padding: 60px;
+}
+
+
+.brand-container {
+    margin-bottom: 40px;
+}
+
+.brand-container img {
+    height: 32px;
+}
+
+
+.form-container {
+    max-width: 380px;
+}
+
+.form-header h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.form-header p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 32px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.input-group input {
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+
+.secondary-option {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    font-size: 13px;
+    margin-bottom: 24px;
 }
 
-.form-wrap{
-    width: 75%;
-    max-width: 420px;
+.remember-container {
     display: flex;
-    flex-direction: column;
-    gap: 12px;
+    align-items: center;
+    gap: 6px;
 }
 
-/* Headings */
-.title{
-    text-align: center;
-    font-size: 1.8rem;
-    color: var(--secondary);
+.secondary-option a {
+    text-decoration: none;
+    color: #6b4eff;
 }
 
-.subtitle{
-    text-align: center;
-    font-size: 0.95rem;
-    color: var(--muted);
-    margin-bottom: 15px;
-}
-
-/* Form Card */
-form{
-    background: var(--glass);
-    backdrop-filter: blur(12px);
-    border-radius: 16px;
-    padding: 35px;
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-}
-
-/* Labels */
-form label{
-    font-size: 0.85rem;
-    color: var(--muted);
-}
-
-/* Inputs */
-form input{
-    padding: 12px 14px;
-    border-radius: 10px;
-    border: 1px solid #e5e7eb;
-    outline: none;
-    transition: all 0.3s ease;
-}
-
-form input:focus{
-    border-color: var(--primary);
-    box-shadow: 0 0 0 3px rgba(59,92,255,0.15);
-}
-
-/* Button */
-form button{
-    margin-top: 10px;
-    padding: 13px;
-    border-radius: 12px;
-    background: linear-gradient(135deg, var(--primary), #1d4ed8);
-    color: #fff;
-    font-weight: 600;
+.signin-container button {
+    width: 100%;
+    padding: 12px;
+    background: #6b4eff;
+    color: #ffffff;
     border: none;
+    border-radius: 6px;
+    font-size: 15px;
     cursor: pointer;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: 20px;
 }
 
-form button:hover{
-    transform: translateY(-2px);
-    box-shadow: 0 12px 25px rgba(59,92,255,0.4);
+
+.oauth-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: 1px solid #ccc;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 24px;
 }
 
-/* Right Side */
-.right-side{
-    width: 45%;
-    background: linear-gradient(
-        rgba(15,23,42,0.65),
-        rgba(15,23,42,0.65)
-    ),
-    url('../images/bg-image.jpg');
-    background-size: cover;
-    background-position: center;
+.oauth-container img {
+    height: 18px;
+}
+
+.oauth-container a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+}
+
+
+.login-opt-container {
+    text-align: center;
+    font-size: 14px;
+}
+
+.login-opt-container a {
+    color: #6b4eff;
+    text-decoration: none;
+    margin-left: 4px;
+}
+
+
+
+
+.right-side {
+    flex: 1;
+    background: #b49be8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.illustration-container img {
+    max-width: 80%;
+    height: auto;
 }
