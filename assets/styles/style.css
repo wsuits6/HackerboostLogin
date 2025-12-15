@@ -40,7 +40,8 @@ body {
 
 /*Main brnad contianer*/
 .brand-container {
-    margin-bottom: 3%;
+    margin-bottom: 14%;
+    margin-left: 10px;
     display: flex;
     flex-direction: row;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -60,7 +61,7 @@ body {
 /*Qubes logo styling*/
 .brand-container .Qubes-contianer  {
     height: 32px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 30px;
     height: 30px;
     position: relative;
@@ -80,15 +81,42 @@ body {
     position: absolute;
     width:12px;
     height: 12px;
-    top: 16px;
+    top: 14px;
 }
 
 
+/*Second   qubes */ 
+/*tited  Qube*/
+.rotatedqube{
+    background:#A88BDB;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: 15px;
+    bottom: 19px;
+    /*rotate qube*/
+    transform: rotate(40deg);
+}
 
+/*Second Imaginary qube */
+.qubes2{
+    content: "";
+    background: #5F449C;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left:14px;
+    top: 14px;
+}
+
+
+/*Main form contianer*/
 .form-container {
     max-width: 380px;
 }
 
+
+/*Form header*/
 .form-header h1 {
     font-size: 28px;
     margin-bottom: 8px;
